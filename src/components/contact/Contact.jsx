@@ -1,7 +1,11 @@
 import "./contact.css";
 
 const Contact = () => {
-  return <div>contact</div>;
+  return (
+    <section id="contact">
+      <h5>contact me</h5>
+    </section>
+  );
 };
 
 export default Contact;
