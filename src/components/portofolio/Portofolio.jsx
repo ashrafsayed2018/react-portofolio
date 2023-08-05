@@ -57,9 +57,9 @@ const Portofolio = () => {
       <h5>my Recent work</h5>
       <h2>Portofolio</h2>
       <div className="container portofolio__container">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <aritcle className="portofolio__item" key={data.id}>
+            <article className="portofolio__item" key={index}>
               <div className="portofolio__item__image">
                 <img src={item.image} alt={data.title} />
               </div>
@@ -82,7 +82,7 @@ const Portofolio = () => {
                   live demo
                 </a>
               </div>
-            </aritcle>
+            </article>
           );
         })}
       </div>
